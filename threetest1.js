@@ -19,7 +19,7 @@ function init() {
     new RGBELoader()
         .setDataType( THREE.UnsignedByteType )
         .setPath( 'textures/')
-        .load( 'st_fagans_interior_1k.hdr', function ( texture ) {
+        .load( 'peppermint_powerplant_1k.hdr', function ( texture ) {
 
             var envMap = pmremGenerator.fromEquirectangular( texture ).texture;
 
@@ -45,6 +45,11 @@ function init() {
             } );
         
         } );
+
+
+    var light = new THREE.DirectionalLight( 0xffffff, 2 );
+    light.position.set(3,4,2);
+    scene.add( light );
 
     renderer = new THREE.WebGLRenderer( { antialias: true } );
 	renderer.setPixelRatio( window.devicePixelRatio );
