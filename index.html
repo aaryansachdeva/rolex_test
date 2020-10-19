@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Rolex Assignment</title>
+		<style>
+			body { margin: 0; background-color: #da73da;}
+			canvas { display: block; z-index: 1;}
+            #as_logo {
+                display: block;
+                max-width:230px;
+                max-height:135px;
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            #main_text {
+                display: block;
+                max-width:230px;
+                max-height:135px;
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 10;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+		</style>
+	</head>
+	<body>
+
+        <img id="as_logo" src="./web_favicon.png" alt="logo">
+
+        <p id="main_text"> Tumble - Left Mouse Button <br> Pan - Right Mouse Button <br> Zoom - Scroll/Middle Mouse Button</p>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.js"></script>
+        <!--<script src="./GLTFLoader.js"></script>-->
+        <script src="./loading-bar.js"></script>
+        <link rel="stylesheet" href="./loading-bar.css">
+        <!--<script src="./OrbitControls.js"></script>-->
+        <!-- <script src="./examples/jsm/loaders/RGBELoader.js"></script> -->
+        <script type="module" src="./threetest1.js"></script>
+
+        <!--<div class="ldBar" data-value="50" data-preset="text">
+        </div>
+        -->
+	</body>
+</html>
